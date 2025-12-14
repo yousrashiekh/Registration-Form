@@ -1,2 +1,2 @@
 # form
-this is a form
+This is a Registration Form
