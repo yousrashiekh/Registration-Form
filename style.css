@@ -4,24 +4,24 @@
   color: white;
 }
 body {
-  background: linear-gradient( #89f7fe 0%, #66a6ff 100%);
+  background: linear-gradient(#89f7fe 0%, #66a6ff 100%);
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  padding-top: 15%;
+  align-items: flex-start;
 }
-
 .container {
   width: 250px;
   height: 500px;
-  border-radius: 7px;
-  padding: 56px;
-  margin-top: 60px;
- 
-
+  border-radius: 8px;
+  padding: 40px;
   border: none;
   background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
+  justify-content: center;
 }
 h1 {
   text-transform: capitalize;
@@ -33,7 +33,7 @@ h1 {
 }
 .parents label {
   color: #162447;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 500;
 }
 .parents input,
@@ -49,10 +49,12 @@ select {
   padding-left: 15px;
   color: #162447;
 }
-.parents ::placeholder {
+.parents ::placeholder,
+select {
   justify-content: center;
   align-items: center;
   color: #999;
+  font-size: 20px;
 }
 .parents button {
   width: 200px;
@@ -61,16 +63,60 @@ select {
   border-radius: 30px;
   background-color: #162447;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   justify-content: center;
   transition: 0.3s;
 }
 .parents button:hover {
   background-color: #1f4068;
 }
-@media (min-width: 430) {
+
+@media (min-width: 431px) {
   .container {
-    width: 150px;
-    height: 100px;
+    width: 300px;
+    height: 500px;
+    padding: 30px;
+    margin-top:15px;
+  }
+
+  .parents input,
+  .parents select,
+  .parents button {
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .parents label {
+    font-size: 25px;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .container {
+    width:300px ;
+    height: 500px; ;
+    padding:20px;
+    margin-top:9px;
+  }
+
+  .parents input,
+  .parents select,
+  .parents button {
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .parents label {
+    font-size: 20px;
+  }
+  .parents ::placeholder{
+    font-size:small ; 
   }
 }
